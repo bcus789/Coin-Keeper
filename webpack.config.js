@@ -21,6 +21,9 @@ module.exports = {
   },
   devtool: "cheap-module-eval-source-map", //allows us to find the actual component where the error is occuring as opposed to sending us to webpacks bundle.js. In general source maps make debugging so so much better.
   devServer: {
-    contentBase: path.join(__dirname, "public") //this allows dev server to know where the public server is by conecting the root directory to the public folder
+    contentBase: path.join(__dirname, "public"),
+    historyApiFallback: true
+    
+    //this allows dev server to know where the public server is by conecting the root directory to the public folder
   }
 };
