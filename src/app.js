@@ -20,7 +20,7 @@ const HelpMe = () => (
   <div>Please help me!</div>
 );
 const NotFoundPage = () => (
-  <div>THIS AN 404!</div>
+  <div>THIS AN 404! - <a href="/">Go Home</a></div>
 );
 
 
