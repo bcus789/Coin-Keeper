@@ -6,7 +6,7 @@ import "./styles/styles.scss";
 
 const ExpenseDashboardPage = () => (
   <div>
-  This is from my dashboard component
+  This is from my dashboard component. Hello. Goodbye
   </div>
 )
 
