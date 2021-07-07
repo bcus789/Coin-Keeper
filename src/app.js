@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 
@@ -20,7 +20,8 @@ const HelpMe = () => (
   <div>Please help me!</div>
 );
 const NotFoundPage = () => (
-  <div>THIS AN 404! - <a href="/">Go Home</a></div>
+  <div>THIS AN 404! - <Link to="/">Get Me Out of Here</Link>
+  </div>
 );
 
 
