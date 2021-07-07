@@ -19,14 +19,19 @@ const EditExpensePage = () => (
 const HelpMe = () => (
   <div>Please help me!</div>
 );
+const NotFoundPage = () => (
+  <div>THIS AN 404!</div>
+);
+
 
 const routes = (
   <BrowserRouter>
     <div>
-      <Route path="/" component={ExpenseDashboardPage} exact={true}/>
+      <Route path="/" component={ExpenseDashboardPage} exact={true} />
       <Route path="/create" component={AddExpensePage} />
       <Route path="/edit" component={EditExpensePage} />
       <Route path="/help" component={HelpMe} />
+      <Route component={NotFoundPage} />
     </div>
   </BrowserRouter>
 );
